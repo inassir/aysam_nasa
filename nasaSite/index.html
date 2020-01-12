@@ -1,0 +1,105 @@
+<htm>
+    <head>
+        <title>Sky & Beyond</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Arimo|Gelasio|Lato|Open+Sans|Rubik|Slabo+27px&display=swap" rel="stylesheet">
+    </head>
+    <body onload="getData()">
+       <nav>
+           <ul>
+                <li>
+               <a href="#"><img src="images/rocket.svg"></a>
+                    </li>
+               <li>
+                   <a href="#">Home</a>
+               </li>
+                <li>
+                <a href="#">Contact</a>
+                </li>
+               
+           </ul>
+       </nav>
+       <header>
+           <div class="About">
+             <span id="title">About Us</span>
+             <p id="aboutText">
+                    We are a group of <span id="highlight">NASA</span> workers, that've decided to create a website
+                    that introduces the outer space to you.
+                    <br>
+                    You can search for any planet or galaxy and get information and photos about your search.
+                    You can <strong>Click</strong> each <strong>picture</strong> for more details
+                    about your search. 
+                    
+                    <br><br>Click <a href="#mainSearch" style="color:blue">Search</a> to start searching now! 
+             </p>
+           </div>
+           <div class="Search">
+                <span id="title">NASA</span>
+                <p id="aboutText">
+                  NASA is a company that does researches on space or stuff, I don't really know 
+                  <br>
+                  I'm typing words to fill in <strong>space</strong>, hoping that the site will look good.
+                    <br>
+                  To join our team click <a href="#"><span id="highlight">Contact Us</span></a>.<br> You don't have to do anything and you'll
+                  still get paid 10k$ a day. Requirements: <span id="highlight">hate winter</span>
+                </p>
+           </div>
+       </header>
+       
+       <main id="mainSearch">
+           <div class="searchBar">  
+             <input type="text" value="earth" id="textbox" placeholder="Search..">
+             <a id="searchBtn" onclick="getData()"><img src="images/search.svg"></a>
+           </div>
+           <div>
+               <label id="errorLabel"></label>
+           </div>
+           <div class="images">
+               <a onclick="changePic(-1)"><img src="images/leftBtn.svg"></a>
+               <div class="image">
+                   <a onclick="viewDetails(1)"><img class ="image1" src="images/img1.jpg"></a>
+               </div>
+               <div id="img2" class="image">
+                   <a onclick="viewDetails(2)"><img class="image2" src="images/img2.jpg"></a> 
+               </div>
+               <div id="img3" class="image">
+                    <a onclick="viewDetails(3)"><img class="image3" src="images/img3.jpg"></a>
+               </div>
+               <a onclick="changePic(1)"><img src="images/rightBtn.svg"></a>
+           </div>
+       </main>
+       <div class="imageDetails">
+        <img id="imgDetails" src="">
+        <div class="textDetails">
+        <a onclick="playSong()"><p id="titleDetails">  </p></a>
+        <p id="descDetails">
+
+        </p>
+        
+    </div>
+    <span class="close">&times;</span>
+        </div>
+       <span id="ourTeam">
+   Our Team
+       </span>
+        <footer>
+            <div class="card">
+           <img src="images/inas.jpg">
+           <span>Inas Sirhan</span>
+            </div>
+            <div class="card">
+                    <img src="images/inas.jpg">
+                    <span>Aysam</span>
+                </div>
+                <div class="card">
+                        <img src="images/inas.jpg">
+                        <span>Mahmoud</span>
+                    </div>
+                    <div class="card">
+                    <img src="images/inas.jpg">
+                    <span>Fatme</span>
+                </div>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
+</htm>
